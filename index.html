@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>二期</title> 
+		<link rel="icon" href="static/img/earth.ico" />
+		<link rel="stylesheet" href="static/plugins/bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" href="static/plugins/font-awesome/css/font-awesome.css"/>
+		<link rel="stylesheet" href="http://localhost:8080/arcgis4.0/esri/css/main.css">
+		<link rel="stylesheet" href="static/css/reset.css"/>
+		<link rel="stylesheet" href="build/css/bundle.css" />
+		<!--dojo模块化config配置-->
+		<script type="text/javascript">
+//			var dojoConfig = {
+//				parseOnLoad: true,
+//				packages: [{
+//					"name": "mapjs",
+//					"location": location.pathname.replace(/\/[^/]+$/, '') + "/static/js/mapjs"
+//				}]
+//			};
+		</script>
+		<script src="http://localhost:8080/arcgis4.0/init.js"></script>
+	</head>
+	<body>
+		
+		<!--loading...-->
+		<div id="loading">
+			<div class="earthCenter"> 
+				<!--隐藏地球上的图标-->
+				<!--<div class="earthLogo"></div>-->
+				<div class="earthLoad">
+					<!--<img src="img/logo.gif" />-->
+				</div>
+			</div>
+		</div>
+		
+		<!--地图容器-->
+		<div id="map"></div>
+		
+		
+		
+		<script type="text/javascript" src="static/js/jquery.2.1.4.min.js"></script> 
+		<script type="text/javascript" src="static/plugins/bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="config/IPconfig.js"></script>
+		<script type="text/javascript" src="build/js/vendor.js" ></script>
+		<script type="text/javascript" src="build/js/bundle.js"></script>
+		<script type="text/javascript" src="static/js/map.js"></script>
+	</body>	
+</html>
+

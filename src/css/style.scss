@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@import "common.scss";
+
+/*loading...*/
+#loading{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: $bg5-color;
+    >.earthCenter{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        height: 200px;
+        margin-top: -100px;
+        margin-left: -100px;
+        background-repeat: no-repeat;
+        >.earthLogo{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            margin-top: -94px;
+            margin-left: -99px;
+            background-image: url(../assets/earth-lesslogo.png);
+            background-repeat: no-repeat;
+        }
+        >.earthLoad{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 134px;
+            height: 133px;
+            margin-top: -67px;
+            margin-left: -67px;
+            background-image: url(../assets/earth-loaderBlue.png);
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+/*验证提示*/
+.conFloChild{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background-color: $bg5-color;
+    >div{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+    }
+    >.fails{
+        min-width: 40%;
+        height: 50px;
+        line-height: 50px;
+        margin-top: -25px;
+        margin-left: -20%;
+        background-color: $false-color;
+        border-radius: $border4-radius;
+    }
+}
+
+
+/*按钮*/
+/*蓝色按钮*/
+.btn-true{
+    padding: 5px 12px;
+    border: $true-border;
+    color: $true-color;
+    border-radius: $border2-radius;
+    background-color: transparent;
+    font-size: 14px;
+    transition-duration: .5s;
+    &:hover{
+        background-color: $true-color;
+        color: #fff;
+        transition-duration: .5s;
+    }
+}
+/*红色按钮*/
+.btn-false{
+    padding: 5px 12px;
+    border: $false-border;
+    color: $false-color;
+    border-radius: $border2-radius;
+    background-color: transparent;
+    font-size: 14px;
+    transition-duration: .5s;
+    &:hover{
+        background-color: $false-color;
+        color: #fff;
+        transition-duration: .5s;
+    }
+}
+/*警用按钮*/
+.btn-disabled{
+    padding: 5px 12px;
+    border: $disable-border;
+    color: #fff;
+    background-color: $disable-color;
+    font-size: 14px;
+}
+/*大按钮*/
+.btn-l{
+    padding: 9px 16px;
+    font-size: 16px;
+}
+/*小按钮*/
+.btn-s{
+    padding: 2px 5px;
+    font-size: 12px;
+}
+/*圆形按钮*/
+.btn-radius{
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: $bg-color;
+    border-radius:50%;
+    font-size: 20px;
+    transition-duration: .5s;
+    &:hover{
+        background-color: $true-color;
+        transition-duration: .5s;
+    }
+}
+.btn-active{    
+    background-color: $true-color;
+}

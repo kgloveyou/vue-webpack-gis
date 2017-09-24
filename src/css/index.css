@@ -1,0 +1,252 @@
+/*loading...*/
+#loading{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	background-color: rgba(0, 0, 0,.5);
+}
+#loading>.earthCenter{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+	margin-top: -100px;
+	margin-left: -100px;
+	background-repeat: no-repeat;
+}
+#loading>.earthCenter>.earthLogo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+	margin-top: -94px;
+	margin-left: -99px;
+	background-image: url(../assets/earth-lesslogo.png);
+	background-repeat: no-repeat;
+}
+#loading>.earthCenter>.earthLoad{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 134px;
+	height: 133px;
+	margin-top: -67px;
+	margin-left: -67px;
+	background-image: url(../assets/earth-loaderBlue.png);
+	background-repeat: no-repeat;
+}
+
+
+/*验证提示*/
+body>.conFloChild {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10002;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+}
+body>.conFloChild>div {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 4px;
+}
+body>.conFloChild>div.fails {
+	width: 40%;
+	height: 50px;
+	line-height: 50px;
+	margin-top: -25px;
+	margin-left: -20%;
+	background-color: #FF0033;
+}
+
+
+/*按钮*/
+/*蓝色按钮*/
+.btn-true{
+	padding: 5px 12px;
+	border: 1px solid #2896FC;
+	color: #2896FC;
+	background-color: transparent;
+	font-size: 14px;
+	border-radius:2px ;
+	transition-duration: .5s;
+}
+.btn-true:hover{
+	background-color: #2896FC;
+	color: #fff;
+	transition-duration: .5s;
+}
+/*红色按钮*/
+.btn-false{
+	padding: 5px 12px;
+	border: 1px solid #FF0033;
+	color: #FF0033;
+	background-color: transparent;
+	font-size: 14px;
+	border-radius:2px;
+	transition-duration: .5s;
+}
+.btn-false:hover{
+	background-color: #FF0033;
+	color: #fff;
+	transition-duration: .5s;
+}
+/*大按钮*/
+.btn-l{
+	padding: 9px 16px;
+	font-size: 16px;
+}
+/*小按钮*/
+.btn-s{
+	padding: 2px 5px;
+	font-size: 12px;
+}
+/*圆形按钮*/
+.btn-radius{
+	width: 48px;
+	height: 48px;
+	border: none;
+	background-color: #323232;
+	border-radius:50%;
+	font-size: 20px;
+	transition-duration: .5s;
+}
+.btn-radius:hover{
+	background-color: #2896FC;
+	transition-duration: .5s;
+}
+.btn-active{	
+	background-color: #2896FC;
+}
+
+/*面板*/
+.panels{
+	background-color: rgba(0,0,0,.5);
+	border-radius: 6px;
+	box-shadow: 0px 0px 10px 3px rgba(255,255,255,.4);
+	color: #fff;
+}
+.panels-header{
+	height: 40px;
+	padding:0 10px;
+	background-color: rgba(0,0,0,.3);
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+.panels-header>h3{
+	color: #2896FC;
+	line-height: 40px;
+	font-size: 18px;
+}
+.panels-body{
+	height:calc(100% - 40px);
+	padding: 5px 0 5px 10px;
+	font-size: 14px;
+}
+/*关闭按钮*/
+.closes{
+	float: right;
+	width: 26px;
+	height: 26px;
+	margin: 7px 0;
+	text-align: center;
+	line-height: 26px;
+	color: #FF0033;
+	font-size: 24px;
+	font-weight: bolder;
+	border-radius: 2px;
+	transition-duration: .5s;
+}
+.closes:hover{
+	color: #fff;
+	background-color: #FF0033;
+	cursor: pointer;
+	transition-duration: .5s;
+}
+/*中心*/
+.panels-center{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+/*左上角*/
+.panels-top-left{
+	position: absolute;
+	top: 50px;
+	left: 25px;
+}
+/*左下角*/
+.panels-bottom-left{
+	position: absolute;
+	bottom: 35px;
+	left: 25px;
+}
+/*右上角*/
+.panels-top-right{
+	position: absolute;
+	top: 50px;
+	right: 85px;
+}
+/*右下角*/
+.panels-bottom-right{
+	position: absolute;
+	bottom: 35px;
+	right: 85px;
+}
+
+/*form元素*/
+/*input框*/
+.input{
+    height: 40px;
+	padding: 0 12px;
+    border-radius: 2px;
+    border: none;
+    background-color: rgba(0, 0, 0, .4);
+    transition: background-color 1s;
+    font-size: 14px;
+}
+.input-l{
+	height: 45px;
+	padding: 0 15px;
+	font-size: 16px;
+}
+.input-s{
+	height: 31px;
+	padding: 0 10px;
+}
+.textarea{
+	padding: 5px 10px;
+	border: none;
+	resize: none;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, .4);
+	transition: background-color 1s;
+	font-family: "microsoft yahei";
+	font-size: 14px;
+}
+.input:focus,.textarea:focus{
+	background-color: rgba(0, 0, 0, .6);
+}
+.select{
+	height: 31px;
+	padding-left: 5px;
+	background-color: rgba(0, 0, 0,.6);
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+

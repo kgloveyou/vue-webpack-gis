@@ -1,0 +1,13 @@
+@charset "UTF-8";
+$bg-color: #041026;   //bg背景颜色
+$true-color: #2896fc;   //蓝色
+$false-color: #ff0033;  //红色
+$disable-color: #aaa;   //灰色
+$bg4-color: rgba(0,0,0,.4); //黑色透明度0.4
+$bg5-color: rgba(0,0,0,.5); //黑色透明度0.5
+$true-border: 1px solid $true-color;    //蓝色border
+$false-border: 1px solid $false-color;   //红色border
+$disable-border: 1px solid $disable-color;    //灰色border
+$border2-radius: 2px;   //2px像素圆角
+$border4-radius: 4px;   //4px像素圆角
+$border6-radius: 6px;   //6px像素圆角
